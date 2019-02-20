@@ -19,7 +19,20 @@
     grid-column-end: 5;
     padding-top: 3em;
 }
+/* ===================== */
+    /* registration styling */
+/* ===================== */
 
+.registration {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding-top: 1em;
+    text-decoration: none;
+
+}
+a {
+    text-decoration: none;
+}
     /* ===================== */
 /* navigation container styling */
     /* ===================== */
@@ -27,15 +40,46 @@
 .grid-container-top {
     display: inline-grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap: 50px;
+    grid-gap: 6em;
 
+}
+.grid-container-top > div {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.grid-item-registration {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.grid-item-registration > .registration{
+
+    grid-column-start: 1 ;
+    grid-column-end: 3 ;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .grid-container1 {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap: 20px;
+    grid-gap: 5em;
 }
 .grid-container1 > div {
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.658);
 }
+
+.grid-container-bottom > .nav-links {
+    padding-top: 1em;
+    padding-left: 7em;
+    padding-bottom: 2em;
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    font-family: 'Roboto', sans-serif; 
+}
+
+    /* font-family: 'Audiowide', cursive;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Roboto', sans-serif; */
