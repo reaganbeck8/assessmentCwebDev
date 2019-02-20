@@ -1,0 +1,17 @@
+/* navigation menu styling starts here */
+
+/* ===================== */
+    /* logo styling */
+/* ===================== */
+
+.logo {
+    width: 300px;
+    height: 109px;
+}
+    /* ===================== */
+/* navigation container styling */
+    /* ===================== */
+
+.container {
+    display: grid;
+}
