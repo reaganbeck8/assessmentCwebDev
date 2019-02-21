@@ -17,16 +17,15 @@
 .searchbar {
     grid-column-start: 2;
     grid-column-end: 5;
-    padding-top: 3em;
+    padding-top: 5em;
 }
 /* ===================== */
     /* registration styling */
 /* ===================== */
 
 .registration {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    padding-top: 1em;
+    
+    padding-top: 5em;
     text-decoration: none;
 
 }
@@ -37,11 +36,32 @@ a {
 /* navigation container styling */
     /* ===================== */
 
+    nav {
+        position: fixed;
+        padding-bottom: 2em;
+        overflow: hidden;
+        width: 100%;
+        top: 0;
+        
+    }
 .grid-container-top {
     display: inline-grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 6em;
+    background-color: white;
+    top: 0;
 
+}
+html {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: 0px;
+}
+
+.grid-container {
+    background-color: white;
 }
 .grid-container-top > div {
     padding-left: 2em;
@@ -53,16 +73,15 @@ a {
 }
 .grid-item-registration > .registration{
 
-    grid-column-start: 1 ;
-    grid-column-end: 3 ;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .grid-container1 {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 5em;
+    padding-top: 2em;
 }
 .grid-container1 > div {
     background-color: rgba(0, 0, 255, 0.658);
@@ -70,13 +89,63 @@ a {
 
 .grid-container-bottom > .nav-links {
     padding-top: 1em;
-    padding-left: 7em;
+    padding-left: 9em;
+    padding-right: 9em;
+    margin-left: 3em;
+    margin-right: 3em;
     padding-bottom: 2em;
     color: black;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     font-family: 'Roboto', sans-serif; 
+    background-color: red;
 }
+.basket {
+    padding-top: 3.8em;
+}
+
+.grid-container-bottom > .nav-links > a {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    color: white;
+}
+
+/* Main container styling starts here */
+main {
+    padding-top: 15em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Setting the view height to full screen  */
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/web-banner-asics-gel-kayano-5-og.jpg");
+
+  z-index: -1;
+
+  /* setting the height of the hero */
+  height: 45%;
+
+  /* positioning the hero to fit the center of the screen */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* making the text display at the center of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 
     /* font-family: 'Audiowide', cursive;
 
