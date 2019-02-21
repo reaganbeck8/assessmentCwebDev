@@ -27,6 +27,7 @@
     
     padding-top: 5em;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 
 }
 a {
@@ -97,8 +98,15 @@ html {
     color: black;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     background-color: red;
+}
+.nav-links > a:hover {
+    text-align: center;
+    color: white;
+    background-color: black;
+    transition: 500ms;
+    border-radius: 20px;
 }
 .basket {
     padding-top: 3.8em;
@@ -153,8 +161,10 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5em;
+  font-weight: unset;
 }
-
   /* sign-up box */
 .subscription {
     text-align: right;
