@@ -93,7 +93,7 @@ html {
     padding-right: 9em;
     margin-left: 3em;
     margin-right: 3em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     color: black;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -129,7 +129,12 @@ body, html {
   z-index: -1;
 
   /* setting the height of the hero */
-  height: 45%;
+  height: 66vh;
+
+  /* margining for alignment with the nav */
+  margin-top: 10em;
+  margin-right: 2em;
+  margin-left: 3em;       
 
   /* positioning the hero to fit the center of the screen */
   background-position: center;
