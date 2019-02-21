@@ -46,7 +46,7 @@ a {
     }
 .grid-container-top {
     display: inline-grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-gap: 6em;
     background-color: white;
     top: 0;
@@ -112,9 +112,10 @@ html {
 
 /* Main container styling starts here */
 main {
-    padding-top: 15em;
+    padding-top: 1em;
     width: 80%;
     margin: 0 auto;
+    max-width: inherit;
 }
 
 /* Setting the view height to full screen  */
@@ -151,6 +152,44 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+  /* sign-up box */
+.subscription {
+    text-align: right;
+}
+/* img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+} */
+
+/* grid-item images */
+.grid-item1 {
+    background-image: url("../images/Nike-Air_Max\ 720\ -\ Nothern\ Lights.jpg");
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 250px;
+}
+.grid-item2 {
+    background-image: url("../images/Nike-Air_Max\ 720\ -\ Nothern\ Lights.jpg");
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 250px;
+}
+.grid-item3 {
+    background-image: url("../images/Nike-Air_Max\ 720\ -\ Nothern\ Lights.jpg");
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 250px;
+}
+.grid-item4 {
+    background-image: url("../images/Nike-Air_Max\ 720\ -\ Nothern\ Lights.jpg");
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 250px;
+}
 
     /* font-family: 'Audiowide', cursive;
 
