@@ -46,7 +46,7 @@ a {
     }
 .grid-container-top {
     display: inline-grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     grid-gap: 6em;
     background-color: white;
     top: 0;
@@ -79,7 +79,7 @@ html {
 
 .grid-container1 {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-gap: 5em;
     padding-top: 2em;
 }
@@ -173,22 +173,53 @@ body, html {
     width: 250px;
 }
 .grid-item2 {
-    background-image: url("../images/Nike-Air_Max\ 720\ -\ Nothern\ Lights.jpg");
+    background-image: url("../images/Nike-Air_VaporMax-2019.jpg");
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
 }
 .grid-item3 {
-    background-image: url("../images/Nike-Air_Max\ 720\ -\ Nothern\ Lights.jpg");
+    background-image: url("../images/nike-air-jordan-future--camo.jpg");
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
 }
 .grid-item4 {
-    background-image: url("../images/Nike-Air_Max\ 720\ -\ Nothern\ Lights.jpg");
+    background-image: url("../images/ASICS\ WMNS\ Valentines\ Day\ Gel\ Saga.jpg");
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
+}
+.grid-item5 {
+    background-image: url("../images/Nike-WMNS-Air-FORCE-1-SAGE-LOW-TRIPLE-WHITE.jpg");
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 250px;
+}
+.grid-item6 {
+    background-image: url("../images/Vans-x-van-gogh-UA-classic-slip-on-skull.jpg");
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 250px;
+}
+.grid-item7 {
+    background-image: url("../images/Peanuts\ x\ Diadora\ Mi\ Basket.jpg");
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 250px;
+}
+.grid-item8 {
+    background-image: url("../images/asics-gel-lyte-v-sanze-mt--sand.jpg");
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 250px;
+}
+.grid-item9 {
+    background-image: url("../images/asics-gel-saga-white-flash--yellow.jpg");
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 250px;
+    
 }
 
     /* font-family: 'Audiowide', cursive;
