@@ -1,58 +1,50 @@
 /* navigation menu styling starts here */
 
-/* ===================== */
-    /* logo styling */
-/* ===================== */
+/* logo styling */
 
 .logo {
     width: 300px;
     height: 109px;
-    
 }
 
-/* ===================== */
-    /* searchbar styling */
-/* ===================== */
+/* searchbar styling */
 
 .searchbar {
     grid-column-start: 2;
     grid-column-end: 5;
     padding-top: 5em;
 }
-/* ===================== */
-    /* registration styling */
-/* ===================== */
+
+/* registration styling */
 
 .registration {
-    
     padding-top: 5em;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-
 }
+
 a {
     text-decoration: none;
 }
-    /* ===================== */
-/* navigation container styling */
-    /* ===================== */
 
-    nav {
-        position: fixed;
-        padding-bottom: 2em;
-        overflow: hidden;
-        width: 100%;
-        top: 0;
-        
-    }
+/* navigation container styling */
+
+nav {
+    position: fixed;
+    padding-bottom: 2em;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+}
+
 .grid-container-top {
     display: inline-grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 6em;
     background-color: white;
     top: 0;
-
 }
+
 html {
     top: 0;
     left: 0;
@@ -64,31 +56,24 @@ html {
 .grid-container {
     background-color: white;
 }
-.grid-container-top > div {
+
+.grid-container-top>div {
     padding-left: 2em;
     padding-right: 2em;
 }
+
 .grid-item-registration {
     display: grid;
     grid-template-columns: auto auto;
 }
-.grid-item-registration > .registration{
 
+.grid-item-registration>.registration {
     padding-left: 1em;
     padding-right: 1em;
 }
 
-.grid-container1 {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 5em;
-    padding-top: 2em;
-}
-.grid-container1 > div {
-    background-color: rgba(0, 0, 255, 0.658);
-}
 
-.grid-container-bottom > .nav-links {
+.grid-container-bottom>.nav-links {
     padding-top: 1em;
     padding-left: 9em;
     padding-right: 9em;
@@ -101,24 +86,29 @@ html {
     font-family: 'Montserrat', sans-serif;
     background-color: red;
 }
-.nav-links > a:hover {
+
+.nav-links>a:hover {
     text-align: center;
     color: white;
     background-color: black;
     transition: 500ms;
     border-radius: 20px;
 }
+
 .basket {
     padding-top: 3.8em;
 }
 
-.grid-container-bottom > .nav-links > a {
+.grid-container-bottom>.nav-links>a {
     padding-left: 2.5em;
     padding-right: 2.5em;
     color: white;
 }
 
+/* Navigation menu styling ends here */
+
 /* Main container styling starts here */
+
 main {
     padding-top: 1em;
     width: 80%;
@@ -127,113 +117,452 @@ main {
 }
 
 /* Setting the view height to full screen  */
+
 body, html {
     height: 100%;
 }
 
-/* The hero image */
+/* The hero image styling */
+
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/web-banner-asics-gel-kayano-5-og.jpg");
-
-  z-index: -1;
-
-  /* setting the height of the hero */
-  height: 66vh;
-
-  /* margining for alignment with the nav */
-  margin-top: 10em;
-  margin-right: 2em;
-  margin-left: 3em;       
-
-  /* positioning the hero to fit the center of the screen */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/web-banner-asics-gel-kayano-5-og.jpg");
+    z-index: -1;
+    /* setting the height of the hero */
+    height: 66vh;
+    /* margining for alignment with the nav */
+    margin-top: 10em;
+    margin-right: 2em;
+    margin-left: 3em;
+    /* positioning the hero to fit the center of the screen */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
 }
 
 /* making the text display at the center of the image */
+
 .hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.5em;
-  font-weight: unset;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
 }
-  /* sign-up box */
+
+/* sign-up box */
+
 .subscription {
-    text-align: right;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
 }
-/* img {
-    width: auto;
-    max-width: 100%;
+
+.subscription-container {
+    align-items: center;
+    display: flex;
+}
+/* Grid-container styling starts here */
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5em;
+    margin-top: 2em;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em;
+    padding-top: 2em;
+    margin: 0 auto;
+    justify-content: center;
+  
+}
+.image {
+    width: 100%;
     height: auto;
     overflow: hidden;
-} */
+    text-align: center;
+}
+#imgs {
+    width: 100%;
+}
+.grid-container1>div {
+    background-color: rgba(21, 21, 27, 0.06);
+}
 
-/* grid-item images */
+/* grid-container styling ends here */
+
+/* grid-item images are inserted as background images */
+
 .grid-item1 {
     background-image: url("../images/Nike-Air_Max\ 720\ -\ Nothern\ Lights.jpg");
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    font: bold 15px Sans-Serif;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    left: -5px;
+    top: 15px;
+   
+    
 }
+ 
+  /* green ribbon wrapper styling starts here */
+  
+  .ribbon-wrapper-green {
+    width: 79px;
+    height: 83px;
+    overflow: hidden;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+  }
+  
+  .ribbon-green {
+   
+    text-align: center;
+    -webkit-transform: rotate(45deg);
+    -moz-transform:    rotate(45deg);
+    -ms-transform:     rotate(45deg);
+    -o-transform:      rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    left: -5px;
+    top: 15px;
+    width: 120px;
+    background-color: #4CB420;
+  
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+    box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+  }
+  /* green ribbon wrapper styling ends here */
+  /* green ribbon wrapper styling starts here */
+
+  .ribbon-wrapper-red {
+    width: 79px;
+    height: 83px;
+    overflow: hidden;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+  }
+  
+  .ribbon-red{
+   
+    text-align: center;
+    -webkit-transform: rotate(45deg);
+    -moz-transform:    rotate(45deg);
+    -ms-transform:     rotate(45deg);
+    -o-transform:      rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    left: -5px;
+    top: 15px;
+    width: 120px;
+    background-color: rgb(218, 18, 18);
+  
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+    box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+  }
+  /* green ribbon wrapper styling ends here */
 .grid-item2 {
     background-image: url("../images/Nike-Air_VaporMax-2019.jpg");
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    font: bold 15px Sans-Serif;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    left: -5px;
+    top: 15px;
+    
 }
+
 .grid-item3 {
     background-image: url("../images/nike-air-jordan-future--camo.jpg");
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    font: bold 15px Sans-Serif;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    left: -5px;
+    top: 15px;
 }
+
 .grid-item4 {
     background-image: url("../images/ASICS\ WMNS\ Valentines\ Day\ Gel\ Saga.jpg");
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    font: bold 15px Sans-Serif;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    left: -5px;
+    top: 15px;
 }
+
 .grid-item5 {
     background-image: url("../images/Nike-WMNS-Air-FORCE-1-SAGE-LOW-TRIPLE-WHITE.jpg");
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    font: bold 15px Sans-Serif;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    left: -5px;
+    top: 15px;
 }
+
 .grid-item6 {
     background-image: url("../images/Vans-x-van-gogh-UA-classic-slip-on-skull.jpg");
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    font: bold 15px Sans-Serif;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    left: -5px;
+    top: 15px;
+    
 }
+
 .grid-item7 {
     background-image: url("../images/Peanuts\ x\ Diadora\ Mi\ Basket.jpg");
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    font: bold 15px Sans-Serif;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    left: -5px;
+    top: 15px;
 }
+
 .grid-item8 {
     background-image: url("../images/asics-gel-lyte-v-sanze-mt--sand.jpg");
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    font: bold 15px Sans-Serif;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    left: -5px;
+    top: 15px;
 }
+
 .grid-item9 {
     background-image: url("../images/asics-gel-saga-white-flash--yellow.jpg");
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
-    
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    font: bold 15px Sans-Serif;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    left: -5px;
+    top: 15px;
+  
+}
+.grid-item11 {
+    background-image: url("../images/adi-eqt-support-91-2018.jpg");
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 250px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    font: bold 15px Sans-Serif;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    left: -5px;
+    top: 15px;
+  
+}
+.grid-item12 {
+    background-image: url("../images/Peanuts\ x\ Diadora\ B-Elite.jpg");
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 250px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    font: bold 15px Sans-Serif;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    left: -5px;
+    top: 15px;
+  
+}
+.grid-item13 {
+    background-image: url("../images/Peanuts\ x\ Diadora\ Mi\ Basket.jpg");
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 250px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    font: bold 15px Sans-Serif;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    left: -5px;
+    top: 15px;
+  
+}
+.grid-item14 {
+   
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    font: bold 15px Sans-Serif;
+    color: black;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    left: -5px;
+    top: 15px;
+  
+}
+.grid-item15 {
+  
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 250px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    font: bold 15px Sans-Serif;
+    color: black;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    left: -5px;
+    top: 15px;
+  
+}
+.grid-item16 {
+   
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 250px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    font: bold 15px Sans-Serif;
+    color: black;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    left: -5px;
+    top: 15px;
+  
 }
 
-    /* font-family: 'Audiowide', cursive;
+/* Headings */
+
+.title {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+ 
+  /* Media Queries */
+
+  @media screen (max-width: 1279px) {
+    .grid-container-top > div {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .grid-container1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 4em;
+        margin-top: 2em;
+    }
+    .grid-container-bottom > .nav-links > a {
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+        color: white;
+        text-align: center;
+    }
+    .grid-item-registration > .registration {
+        padding-left: 1em;
+        padding-right: 0em;
+        width: max-content;
+    }
+    .registration {
+        padding-top: 4em;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .basket {
+        padding-top: 3.8em;
+        margin-right: 6em;
+    }
+  }
+  @media screen (max-width: 1030px) {
+    .grid-container1 > div {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 2em;
+        margin-top: 2em;
+    }
+    .grid-item-registration > .registration {
+        padding-left: 0.3em;
+        padding-right: 0em;
+        width: max-content;
+    }
+    .registration {
+        padding-top: 4em;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+  }
+/* @media screen and (max-width: 1279px) {
+    .subscription {
+      max-width: 1152px;
+      width: auto;
+    }
+  }
+ */
+
+/* font-family: 'Audiowide', cursive;
 
     font-family: 'Montserrat', sans-serif;
 
