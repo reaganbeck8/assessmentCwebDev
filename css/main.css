@@ -500,6 +500,19 @@ body, html {
    
 }
 
+/* Buttons styling */
+.buttons {
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+}
+
+/* {
+    color: #000;
+    background-color: white;
+    border-radius: 20px;
+    font-family: inherit;
+} */
  
   /* Media Queries */
 
