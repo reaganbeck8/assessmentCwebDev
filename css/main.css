@@ -2,9 +2,9 @@
 
 /* logo styling */
 
-.logo {
-    width: 300px;
-    height: 109px;
+.logo  {
+    width: 225px;
+    height: 81.5px;
 }
 
 /* searchbar styling */
@@ -12,20 +12,25 @@
 .searchbar {
     grid-column-start: 2;
     grid-column-end: 5;
-    padding-top: 5em;
+    padding-top: 3em;
 }
 
 /* registration styling */
 
 .registration {
-    padding-top: 5em;
+    padding-top: 3em;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
 
+.basket {
+    padding-top: 3em;
+}
 a {
     text-decoration: none;
 }
+
+
 
 /* navigation container styling */
 
@@ -38,10 +43,16 @@ nav {
 }
 
 .grid-container-top {
-    display: inline-grid;
+    display: flex;
     grid-template-columns: auto auto auto auto;
     grid-gap: 6em;
     background-color: white;
+    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-left: 5em;
+    margin-right: 5em;
+    left: 0;
     top: 0;
 }
 
@@ -72,7 +83,6 @@ html {
     padding-right: 1em;
 }
 
-
 .grid-container-bottom>.nav-links {
     padding-top: 1em;
     padding-left: 9em;
@@ -95,9 +105,6 @@ html {
     border-radius: 20px;
 }
 
-.basket {
-    padding-top: 3.8em;
-}
 
 .grid-container-bottom>.nav-links>a {
     padding-left: 2.5em;
@@ -165,8 +172,10 @@ body, html {
 
 .subscription-container {
     align-items: center;
-    display: flex;
+    text-align: right;
+   
 }
+
 /* Grid-container styling starts here */
 
 .grid-container1 {
@@ -175,6 +184,7 @@ body, html {
     grid-gap: 5em;
     margin-top: 2em;
 }
+
 .grid-container2 {
     display: grid;
     grid-template-columns: auto auto;
@@ -182,20 +192,40 @@ body, html {
     padding-top: 2em;
     margin: 0 auto;
     justify-content: center;
-  
 }
+
 .image {
     width: 100%;
     height: auto;
     overflow: hidden;
     text-align: center;
 }
+
 #imgs {
     width: 100%;
 }
+
 .grid-container1>div {
     background-color: rgba(21, 21, 27, 0.06);
 }
+
+/* grid container for the footer starts here */
+
+.grid-container-footer {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10em;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-left: 5em;
+    margin-right: 5em;
+    left: 0;
+    top: 0;
+}
+
+/* grid container for the footer ends here */
 
 /* grid-container styling ends here */
 
@@ -214,70 +244,8 @@ body, html {
     position: relative;
     left: -5px;
     top: 15px;
-   
-    
 }
- 
-  /* green ribbon wrapper styling starts here */
-  
-  .ribbon-wrapper-green {
-    width: 79px;
-    height: 83px;
-    overflow: hidden;
-    position: absolute;
-    top: -2px;
-    right: -2px;
-  }
-  
-  .ribbon-green {
-   
-    text-align: center;
-    -webkit-transform: rotate(45deg);
-    -moz-transform:    rotate(45deg);
-    -ms-transform:     rotate(45deg);
-    -o-transform:      rotate(45deg);
-    position: relative;
-    padding: 7px 0;
-    left: -5px;
-    top: 15px;
-    width: 120px;
-    background-color: #4CB420;
-  
-    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
-    -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
-    box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
-  }
-  /* green ribbon wrapper styling ends here */
-  /* green ribbon wrapper styling starts here */
 
-  .ribbon-wrapper-red {
-    width: 79px;
-    height: 83px;
-    overflow: hidden;
-    position: absolute;
-    top: -2px;
-    right: -2px;
-  }
-  
-  .ribbon-red{
-   
-    text-align: center;
-    -webkit-transform: rotate(45deg);
-    -moz-transform:    rotate(45deg);
-    -ms-transform:     rotate(45deg);
-    -o-transform:      rotate(45deg);
-    position: relative;
-    padding: 7px 0;
-    left: -5px;
-    top: 15px;
-    width: 120px;
-    background-color: rgb(218, 18, 18);
-  
-    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
-    -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
-    box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
-  }
-  /* green ribbon wrapper styling ends here */
 .grid-item2 {
     background-image: url("../images/Nike-Air_VaporMax-2019.jpg");
     background-repeat: no-repeat;
@@ -291,7 +259,6 @@ body, html {
     position: relative;
     left: -5px;
     top: 15px;
-    
 }
 
 .grid-item3 {
@@ -352,7 +319,6 @@ body, html {
     position: relative;
     left: -5px;
     top: 15px;
-    
 }
 
 .grid-item7 {
@@ -398,8 +364,8 @@ body, html {
     position: relative;
     left: -5px;
     top: 15px;
-  
 }
+
 .grid-item11 {
     background-image: url("../images/adi-eqt-support-91-2018.jpg");
     background-repeat: no-repeat;
@@ -413,8 +379,8 @@ body, html {
     position: relative;
     left: -5px;
     top: 15px;
-  
 }
+
 .grid-item12 {
     background-image: url("../images/Peanuts\ x\ Diadora\ B-Elite.jpg");
     background-repeat: no-repeat;
@@ -428,8 +394,8 @@ body, html {
     position: relative;
     left: -5px;
     top: 15px;
-  
 }
+
 .grid-item13 {
     background-image: url("../images/Peanuts\ x\ Diadora\ Mi\ Basket.jpg");
     background-repeat: no-repeat;
@@ -443,10 +409,9 @@ body, html {
     position: relative;
     left: -5px;
     top: 15px;
-  
 }
+
 .grid-item14 {
-   
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
@@ -459,10 +424,9 @@ body, html {
     position: relative;
     left: -5px;
     top: 15px;
-  
 }
+
 .grid-item15 {
-  
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
@@ -474,10 +438,9 @@ body, html {
     position: relative;
     left: -5px;
     top: 15px;
-  
 }
+
 .grid-item16 {
-   
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
@@ -489,18 +452,86 @@ body, html {
     position: relative;
     left: -5px;
     top: 15px;
-  
 }
+
+/* grid-item 1-13 has background images ends here */
+
+/* Footer grid item styling starts here */
+
+.grid-item-footer {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 3em auto;
+}
+
+/* green ribbon wrapper styling starts here */
+
+.ribbon-wrapper-green {
+    width: 79px;
+    height: 83px;
+    overflow: hidden;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+
+.ribbon-green {
+    text-align: center;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    left: -5px;
+    top: 15px;
+    width: 120px;
+    background-color: #4CB420;
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* green ribbon wrapper styling ends here */
+
+/* red ribbon wrapper styling starts here */
+
+.ribbon-wrapper-red {
+    width: 79px;
+    height: 83px;
+    overflow: hidden;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+
+.ribbon-red {
+    text-align: center;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    left: -5px;
+    top: 15px;
+    width: 120px;
+    background-color: rgb(218, 18, 18);
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* red ribbon wrapper styling ends here */
 
 /* Headings */
 
 .title {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
-   
 }
 
 /* Buttons styling */
+
 .buttons {
     background-color: white;
     border-radius: 20px;
@@ -513,11 +544,18 @@ body, html {
     border-radius: 20px;
     font-family: inherit;
 } */
- 
-  /* Media Queries */
 
-  @media screen (max-width: 1279px) {
-    .grid-container-top > div {
+footer {
+    background-color: grey;
+    margin-left: 3em;
+    margin-right: 2em;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media screen (max-width: 1279px) {
+    .grid-container-top>div {
         padding-left: 1em;
         padding-right: 1em;
     }
@@ -527,13 +565,13 @@ body, html {
         grid-gap: 4em;
         margin-top: 2em;
     }
-    .grid-container-bottom > .nav-links > a {
+    .grid-container-bottom>.nav-links>a {
         padding-left: 2.5em;
         padding-right: 2.5em;
         color: white;
         text-align: center;
     }
-    .grid-item-registration > .registration {
+    .grid-item-registration>.registration {
         padding-left: 1em;
         padding-right: 0em;
         width: max-content;
@@ -547,15 +585,16 @@ body, html {
         padding-top: 3.8em;
         margin-right: 6em;
     }
-  }
-  @media screen (max-width: 1030px) {
-    .grid-container1 > div {
+}
+
+@media screen (max-width: 1030px) {
+    .grid-container1>div {
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 2em;
         margin-top: 2em;
     }
-    .grid-item-registration > .registration {
+    .grid-item-registration>.registration {
         padding-left: 0.3em;
         padding-right: 0em;
         width: max-content;
@@ -565,8 +604,8 @@ body, html {
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
     }
-    
-  }
+}
+
 /* @media screen and (max-width: 1279px) {
     .subscription {
       max-width: 1152px;
