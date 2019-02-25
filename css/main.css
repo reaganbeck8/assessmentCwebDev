@@ -2,7 +2,7 @@
 
 /* logo styling */
 
-.logo  {
+.logo {
     width: 225px;
     height: 81.5px;
 }
@@ -26,11 +26,10 @@
 .basket {
     padding-top: 3em;
 }
+
 a {
     text-decoration: none;
 }
-
-
 
 /* navigation container styling */
 
@@ -94,7 +93,8 @@ html {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     font-family: 'Montserrat', sans-serif;
-    background-color: red;
+    background: linear-gradient(-45deg, #f27b7f, #da942c);
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
 }
 
 .nav-links>a:hover {
@@ -104,7 +104,6 @@ html {
     transition: 500ms;
     border-radius: 20px;
 }
-
 
 .grid-container-bottom>.nav-links>a {
     padding-left: 2.5em;
@@ -173,7 +172,6 @@ body, html {
 .subscription-container {
     align-items: center;
     text-align: right;
-   
 }
 
 /* Grid-container styling starts here */
@@ -213,16 +211,16 @@ body, html {
 
 .grid-container-footer {
     display: inline-grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-gap: 10em;
+    grid-gap: 0em;
     background-color: rgba(255, 255, 255, 0);
-    margin: 0 auto;
     margin-right: auto;
     margin-left: auto;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 1em;
+    margin-right: 1em;
     left: 0;
     top: 0;
+}
+
 }
 
 /* grid container for the footer ends here */
@@ -232,7 +230,7 @@ body, html {
 /* grid-item images are inserted as background images */
 
 .grid-item1 {
-    background-image: url("../images/Nike-Air_Max\ 720\ -\ Nothern\ Lights.jpg");
+    background-image: url("../images/nike-air-jordan-future--camo.jpg");
     background-repeat: no-repeat;
     height: 167px;
     width: 250px;
@@ -460,7 +458,7 @@ body, html {
 
 .grid-item-footer {
     background-color: rgba(0, 0, 0, 0);
-    margin: 3em auto;
+    margin: 1em auto;
 }
 
 /* green ribbon wrapper styling starts here */
@@ -525,96 +523,139 @@ body, html {
 
 /* Headings */
 
+.hvr-bubble-bottom {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    margin-top: 3em;
+}
+
+.hvr-bubble-bottom:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    border-style: solid;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    left: calc(50% - 10px);
+    bottom: 0;
+    border-width: 10px 10px 0 10px;
+    border-color: #e1e1e1 transparent transparent transparent;
+}
+
+.hvr-bubble-bottom:hover:before, .hvr-bubble-bottom:focus:before, .hvr-bubble-bottom:active:before {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
 .title {
-    margin: 0 auto;
+    margin: 0 auto 0.2em auto;
     font-family: 'Roboto', sans-serif;
 }
 
-/* Buttons styling */
-
-.buttons {
-    background-color: white;
-    border-radius: 20px;
-    color: black;
-}
-
-/* {
+.title:hover {
+    background: linear-gradient(-45deg, #f27b7f, #da942c);
+    transition-duration: 1s;
+    animation: cubic-bezier(.68, -0.55, .27, 1.55);
+    animation-duration: 0s;
+    animation-duration: 1.2s;
+    color: white;
+    border-radius: 12px;
+    border-block: #adadad;
+    @-webkit-keyframes title {
+        25% {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        75% {
+            -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+    }
+    /* Buttons styling */
+    .buttons {
+        background-color: white;
+        border-radius: 20px;
+        color: black;
+    }
+    /* {
     color: #000;
     background-color: white;
     border-radius: 20px;
     font-family: inherit;
 } */
-
-footer {
-    background-color: grey;
-    margin-left: 3em;
-    margin-right: 2em;
-    text-align: center;
-}
-
-/* Media Queries */
-
-@media screen (max-width: 1279px) {
-    .grid-container-top>div {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-    .grid-container1 {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 4em;
-        margin-top: 2em;
-    }
-    .grid-container-bottom>.nav-links>a {
-        padding-left: 2.5em;
-        padding-right: 2.5em;
-        color: white;
+    footer {
+        background: linear-gradient(-45deg, #da942c, #f27b7f);
+        margin-left: 27em;
+        margin-right: 27em;
         text-align: center;
+        box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
     }
-    .grid-item-registration>.registration {
-        padding-left: 1em;
-        padding-right: 0em;
-        width: max-content;
+    /* Media Queries */
+    @media screen (max-width: 1279px) {
+        .grid-container-top>div {
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+        .grid-container1 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 4em;
+            margin-top: 2em;
+        }
+        .grid-container-bottom>.nav-links>a {
+            padding-left: 2.5em;
+            padding-right: 2.5em;
+            color: white;
+            text-align: center;
+        }
+        .grid-item-registration>.registration {
+            padding-left: 1em;
+            padding-right: 0em;
+            width: max-content;
+        }
+        .registration {
+            padding-top: 4em;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .basket {
+            padding-top: 3.8em;
+            margin-right: 6em;
+        }
     }
-    .registration {
-        padding-top: 4em;
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
+    @media screen (max-width: 1030px) {
+        .grid-container1>div {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 2em;
+            margin-top: 2em;
+        }
+        .grid-item-registration>.registration {
+            padding-left: 0.3em;
+            padding-right: 0em;
+            width: max-content;
+        }
+        .registration {
+            padding-top: 4em;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+        }
     }
-    .basket {
-        padding-top: 3.8em;
-        margin-right: 6em;
-    }
-}
-
-@media screen (max-width: 1030px) {
-    .grid-container1>div {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 2em;
-        margin-top: 2em;
-    }
-    .grid-item-registration>.registration {
-        padding-left: 0.3em;
-        padding-right: 0em;
-        width: max-content;
-    }
-    .registration {
-        padding-top: 4em;
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
-    }
-}
-
-/* @media screen and (max-width: 1279px) {
+    /* @media screen and (max-width: 1279px) {
     .subscription {
       max-width: 1152px;
       width: auto;
     }
   }
  */
-
-/* font-family: 'Audiowide', cursive;
+    /* font-family: 'Audiowide', cursive;
 
     font-family: 'Montserrat', sans-serif;
 
