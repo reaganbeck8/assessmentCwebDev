@@ -84,8 +84,6 @@ html {
 
 .grid-container-bottom>.nav-links {
     padding-top: 1em;
-    padding-left: 9em;
-    padding-right: 9em;
     margin-left: 3em;
     margin-right: 3em;
     padding-bottom: 1em;
@@ -95,6 +93,10 @@ html {
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(-45deg, #f27b7f, #da942c);
     box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    color: white;
+    line-height: 2em;
 }
 
 .nav-links>a:hover {
@@ -171,21 +173,22 @@ body, html {
 
 .subscription-container {
     align-items: center;
-    text-align: right;
+    margin-bottom: 6px;
+    text-align: center;
 }
 
 /* Grid-container styling starts here */
 
 .grid-container1 {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 5em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4em;
     margin-top: 2em;
 }
 
 .grid-container2 {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
     padding-top: 2em;
     margin: 0 auto;
@@ -207,16 +210,20 @@ body, html {
     background-color: rgba(21, 21, 27, 0.06);
 }
 
+footer {
+    background: linear-gradient(-45deg, #f27b7f, #da942c);
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    margin-left: 3em;
+    margin-right: 2em;
+}
+
 /* grid container for the footer starts here */
 
 .grid-container-footer {
     display: inline-grid;
     grid-gap: 0em;
-    background-color: rgba(255, 255, 255, 0);
-    margin-right: auto;
-    margin-left: auto;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 519px;
+    margin-right: 33em;
     left: 0;
     top: 0;
 }
@@ -531,6 +538,7 @@ body, html {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     margin-top: 3em;
+    z-index: -1;
 }
 
 .hvr-bubble-bottom:before {
@@ -557,6 +565,29 @@ body, html {
 .title {
     margin: 0 auto 0.2em auto;
     font-family: 'Roboto', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.inputbox {
+    border-radius: 25px;
+    line-height: 1.8em;
+}
+
+/* Buttons styling */
+
+button {
+    line-height: 1.4;
+    font-style: italic;
+    color: #fff;
+    background-color: #1bff86;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-anchor: middle;
+    justify-items: end;
+    background: linear-gradient(-45deg, #f27b7f, #da942c, #f27b7f);
+    margin-top: 6px;
 }
 
 .title:hover {
@@ -578,63 +609,13 @@ body, html {
             transform: scale(0.9);
         }
     }
-    /* Buttons styling */
-    .buttons {
-        background-color: white;
-        border-radius: 20px;
-        color: black;
-    }
-    /* {
-    color: #000;
-    background-color: white;
-    border-radius: 20px;
-    font-family: inherit;
-} */
-    footer {
-        background: linear-gradient(-45deg, #da942c, #f27b7f);
-        margin-left: 27em;
-        margin-right: 27em;
-        text-align: center;
-        box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-    }
+  
     /* Media Queries */
-    @media screen (max-width: 1279px) {
-        .grid-container-top>div {
-            padding-left: 1em;
-            padding-right: 1em;
-        }
-        .grid-container1 {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            grid-gap: 4em;
-            margin-top: 2em;
-        }
-        .grid-container-bottom>.nav-links>a {
-            padding-left: 2.5em;
-            padding-right: 2.5em;
-            color: white;
-            text-align: center;
-        }
-        .grid-item-registration>.registration {
-            padding-left: 1em;
-            padding-right: 0em;
-            width: max-content;
-        }
-        .registration {
-            padding-top: 4em;
-            text-decoration: none;
-            font-family: 'Montserrat', sans-serif;
-        }
-        .basket {
-            padding-top: 3.8em;
-            margin-right: 6em;
-        }
-    }
-    @media screen (max-width: 1030px) {
+    /* @media screen (max-width: 1030px) {
         .grid-container1>div {
             display: grid;
             grid-template-columns: auto auto;
-            grid-gap: 2em;
+            grid-gap: 4em;
             margin-top: 2em;
         }
         .grid-item-registration>.registration {
@@ -647,14 +628,53 @@ body, html {
             text-decoration: none;
             font-family: 'Montserrat', sans-serif;
         }
+    } */
+    @media screen (max-width: 768px) {
+        /* Main container styling starts here */
+        main {
+            padding-top: 1em;
+            width: 80%;
+            max-width: inherit;
+        }
+        .grid-container1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2em;
+            margin-top: 2em;
+            width: fit-content;
+        }
+        .grid-item1 {
+            background-image: url("../images/nike-air-jordan-future--camo.jpg");
+            background-repeat: no-repeat;
+            height: 167px;
+            width: 250px;
+            box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+            font: bold 15px Sans-Serif;
+            color: white;
+            text-align: center;
+            z-index: -1;
+            position: relative;
+            left: -5px;
+            top: 15px;
+        }
     }
-    /* @media screen and (max-width: 1279px) {
-    .subscription {
-      max-width: 1152px;
-      width: auto;
+    @media screen (max-width: 1020) {
+        /* Main container styling starts here */
+        main {
+            padding-top: 1em;
+            width: 85%;
+            margin-left: 4.5em;
+            margin-right: 5em;
+        }
     }
-  }
- */
+    @media screen  (max-width: 697px) {
+        .grid-container1 {
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 14em;
+            margin-top: 2em;
+        }
+    }
     /* font-family: 'Audiowide', cursive;
 
     font-family: 'Montserrat', sans-serif;
